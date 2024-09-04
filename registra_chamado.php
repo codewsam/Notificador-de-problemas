@@ -1,14 +1,15 @@
 <?php
 
 
-$arquivo = fopen('arquivo.hd','a');
+$arquivo = fopen('../../app_help_desk/arquivo.hd','a');
 
-
+session_start();
 //montagem texo
 $titulo = str_replace('#', '-', $_POST['titulo']);
 $categoria = str_replace('#', '-', $_POST['categoria']);
 $descricao = str_replace('#', '-', $_POST['descricao']);
-$texto =$titulo . '#' . $categoria . '#' .$descricao . PHP_EOL;
+
+$texto = $_SESSION['id'] . '#' . $titulo . '#' . $categoria . '#' .$descricao . PHP_EOL;
 
 //abrindo arquivo
 fwrite($arquivo, $texto);
