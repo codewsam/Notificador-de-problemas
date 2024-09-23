@@ -4,6 +4,6 @@ o projeto não utiliza nenhum banco de dados, é apenas para fins de estudo, pud
 
 ## Tecnologias Utilizadas
 
-- **Linguagem de Programação**: HTML, CSS, PHP
+- **Linguagem de Programação**: PHP
 
 
